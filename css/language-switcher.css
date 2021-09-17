@@ -23,13 +23,13 @@
 
 .language-switcher_en {
     border: none;
-    background: url(./images/uk.svg) no-repeat 15% 45%;
+    background: url(../images/uk.svg) no-repeat 15% 45%;
     background-size: 1.2vw auto;
 }
 
 .language-switcher_ru {
     border: none;
-    background: url(./images/russia.svg) no-repeat 15% 45%;
+    background: url(../images/russia.svg) no-repeat 15% 45%;
     background-size: 1.2vw auto;
 }
 
