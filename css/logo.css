@@ -1,0 +1,13 @@
+
+.logo {
+    width: 12vw;
+    display: inline-block;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    vertical-align: middle;
+}
+
+.logo_priority {
+    border-left: 1x solid white;
+    width: 17vw;
+}

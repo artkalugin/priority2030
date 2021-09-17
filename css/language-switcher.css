@@ -1,0 +1,60 @@
+
+
+
+.language-switcher {
+    display: inline-block;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    padding-top: .6vh;
+    padding-right: 1vh;
+    padding-left: 2.5vw;
+    transition: .25s all;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-family: "PFDinDisplayPro-Reg";
+    font-size: 1.85vw;
+    text-decoration: none;
+}
+
+.language-switcher:last-of-type {
+    margin-left: 1vh;
+}
+
+.language-switcher_en {
+    border: none;
+    background: url(https://5-100.urfu.ru/2018/img/uk.svg) no-repeat 15% 45%;
+    background-size: 1.2vw auto;
+}
+
+.language-switcher_ru {
+    border: none;
+    background: url(https://5-100.urfu.ru/2018/img/russia.svg) no-repeat 15% 45%;
+    background-size: 1.2vw auto;
+}
+
+
+.language-switcher_active,
+.language-switcher:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.language-switcher:active,
+.language-switcher:focus {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.fullscreen .language-switcher {
+    display: none;
+}
+
+
+@media (max-width: 992px), (max-height: 500px) {
+    .language-switcher {
+        padding-right: 3vw;
+        padding-left: 9vw;
+        background-size: auto 50% !important;
+        font-size: 6vw;
+        text-align: center;
+    }
+}

@@ -1,0 +1,77 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: fadeIn .5s;
+    background: #02004e url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font: 16px "PFDinDisplayPro-Reg";
+}
+
+.lightbox-open {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    filter: blur(2px);
+}
+
+.lightbox-open:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    top: 50%;
+    left: 2vw;
+    width: 40vw;
+    transform: translateY(-50%);
+}
+
+.fullscreen {
+    background: white;
+}
+
+.fullscreen .content {
+    display: none;
+}
+
+@media (max-width: 992px), (max-height: 500px) {
+    html,
+    body {
+        overflow: auto;
+    }
+
+    body {
+        background-position: 80% 0%;
+        text-align: center;
+    }
+
+    .content {
+        position: relative;
+        top: auto;
+        right: auto;
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        transform: none;
+        text-align: center;
+    }
+}

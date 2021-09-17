@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "PFDinDisplayPro-Black";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-BlackIt";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-BlackIt.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-Bold";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-BoldItal";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-BoldItal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-Med";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-Med.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-MedItal";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-MedItal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-Reg";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-Reg.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-Thin";
+    font-weight: 100;
+    src: url("../fonts/PFDinDisplayPro-Thin.woff") format("woff");
+}

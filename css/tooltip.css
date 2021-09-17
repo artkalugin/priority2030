@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+    [data-title] {
+        position: relative;
+    }
+
+    [data-title]:hover:before,
+    [data-title]:hover:before {
+        position: absolute;
+        bottom: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent rgba(0, 0, 0, .95) transparent;
+    }
+
+    [data-title]:after,
+    [data-title]:after {
+        font-size: 13px;
+        line-height: 1;
+        position: absolute;
+        bottom: -23px;
+        right: 0;
+        background: rgba(0, 0, 0, .95);
+        color: white;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    [data-title]:hover:after {
+        content: attr(data-title);
+    }
+
+}

@@ -1,0 +1,41 @@
+
+::-moz-selection {
+    background: #0195B2;
+    color: white;
+}
+
+::selection {
+    background: #0195B2;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 5vh;
+    font: 3vw "PFDinDisplayPro-Bold";
+    font-weight: 100;
+    text-shadow: 0 .125vw .25vw rgba(0, 0, 0, .25);
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+p {
+    margin-bottom: 10vh;
+    font: 2.3vw "PFDinDisplayPro-Thin";
+    font-weight: 100;
+    line-height: 1.5;
+    text-shadow: 0 .125vw .25vw rgba(0, 0, 0, .25);
+}
+
+@media (max-width: 992px), (max-height: 500px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 6vw;
+    }
+}

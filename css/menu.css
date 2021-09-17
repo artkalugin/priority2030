@@ -1,0 +1,71 @@
+.menu {
+    position: fixed;
+    z-index: 1;
+    top: 15px;
+    right: 10px;
+}
+
+.menu__toc {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    transition: .15s all;
+    border: none;
+    outline: none;
+    background: url(../images/toc-white.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.menu__toc:hover {
+    opacity: .7;
+}
+
+.menu__info:hover {
+    opacity: .7;
+}
+
+.menu__info {
+    display: none;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    transition: .15s all;
+    border: none;
+    outline: none;
+    background: url(../images/info.svg) no-repeat 50% 50%;
+}
+
+.menu__info.active {
+    opacity: .7;
+}
+
+[lang=ru] .menu__info.active:hover:after {
+    content: 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑÐ»Ð°Ð¹Ð´';
+}
+
+[lang=en] .menu__info.active:hover:after {
+    content: 'Show slide';
+}
+
+.fullscreen .menu__toc {
+    background: url(../images/toc-black.svg) no-repeat 50% 50%;
+}
+
+.fullscreen .menu__info {
+    display: inline-block;
+}
+
+@media (max-width: 992px),
+(max-height: 500px) {
+    .menu {
+        top: 5px;
+    }
+
+    [lang=ru] .menu__info.active:hover:after {
+        content: none;
+    }
+}

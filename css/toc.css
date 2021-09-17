@@ -1,0 +1,79 @@
+.toc {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 980px;
+    transform: translate(-50%, -50%);
+    animation: fadeIn .5s;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25), 0 0 100px rgba(0, 0, 0, .5);
+    color: rgb(0, 0, 0, .85);
+}
+
+.toc_show {
+    display: block;
+}
+
+.toc ul {
+    margin-bottom: 1.9em;
+    padding-left: 0;
+    list-style: none;
+}
+
+.toc ul ul {
+    margin-top: 1em;
+    padding-left: 1.25em;
+    list-style: none;
+}
+
+.toc a {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    color: rgb(0, 0, 0, .85);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+}
+
+.toc li {
+    margin-top: .6em;
+    margin-bottom: .4em;
+    line-height: 1.5;
+}
+
+.toc__content {
+    max-height: 100vh;
+    padding: 0 3.5vw;
+    overflow: auto;
+    font-size: 22px;
+    text-align: left;
+}
+
+.toc__close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    transition: .15s opacity;
+    background: url(../images/close.svg);
+}
+
+.toc__close:hover {
+    opacity: .5;
+}
+
+.toc__close:active {
+    opacity: .4;
+}
+
+@media (max-width: 992px), (max-height: 500px) {
+    .toc__close {
+        right: 15px;
+    }
+}
