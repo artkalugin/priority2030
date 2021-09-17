@@ -23,13 +23,13 @@
 
 .language-switcher_en {
     border: none;
-    background: url(https://5-100.urfu.ru/2018/img/uk.svg) no-repeat 15% 45%;
+    background: url(./images/uk.svg) no-repeat 15% 45%;
     background-size: 1.2vw auto;
 }
 
 .language-switcher_ru {
     border: none;
-    background: url(https://5-100.urfu.ru/2018/img/russia.svg) no-repeat 15% 45%;
+    background: url(./images/russia.svg) no-repeat 15% 45%;
     background-size: 1.2vw auto;
 }
 
